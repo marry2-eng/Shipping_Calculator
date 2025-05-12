@@ -1,0 +1,17 @@
+flowchart TD
+    A[Start] --> B[Display welcome message]
+    B --> C[Prompt for package weight]
+    C --> D{Is weight > 50?}
+    D -- Yes --> E[Display 'Package too heavy' message]
+    E --> F[End]
+    D -- No --> G[Prompt for package width]
+    G --> H[Prompt for package height]
+    H --> I[Prompt for package length]
+    I --> J{Is width + height + length > 50?}
+    J -- Yes --> K[Display 'Package too large' message]
+    K --> F
+    J -- No --> L[Calculate quote: width * height * length * weight / 100]
+    L --> M[Display quote as dollar amount]
+    M --> N[Display 'Thank you!']
+    N --> F
+[![](https://mermaid.ink/img/pako:eNptkU9z2jAQxb_KRhdmKKEyGBv7kEyDaUL-MJlpLqnNQWML2xPJcmW5KWX47hVCpiSDT9rVb9--J29RKjKKQrRm4j0tiFTwEiUV6O9b_EPpegWXl1dwE0dlUzOygXfKUsEpcNo0JKerA3xjqFn8LAWvFayFhJqkbxrQA2VeKMvNDBdtF43twxVM8PXucBvpW3iljYHmx5W9ZyulhICCkt-b3qf1czPxPZ5X2epEailM__asrTJThYVvDXZ3DitO3d8ZbnGOY7TKj3oLw92blPs18MXq6MMB_BD7_jT2w_nYjMicfo79cIh9omITP8YzwtKWEUXhVysUDa2Rfmek3xnpdz_iKzgYW-FHo_J0tGI0gDSQCaadAOGirbpXeTLw8r_vl4JUb7AR7UXPIsvOKBqgXJYZCpVs6QBxKjnZl2i7BxOkCsppgkJ9zOiatEwlKKl2eqwm1U8heDcpRZsXKFwT1uiqrTMdNSpJLgk_diWtMipne6soHAdGA4Vb9EdX2B16wcjzfWfiutidegO0QeF0Ohx5E8f3Rq43HgejyW6A_pqteDj1nAD72HMDx_Xx2N39Ax1n-zg?type=png)](https://mermaid.live/edit#pako:eNptkU9z2jAQxb_KRhdmKKEyGBv7kEyDaUL-MJlpLqnNQWML2xPJcmW5KWX47hVCpiSDT9rVb9--J29RKjKKQrRm4j0tiFTwEiUV6O9b_EPpegWXl1dwE0dlUzOygXfKUsEpcNo0JKerA3xjqFn8LAWvFayFhJqkbxrQA2VeKMvNDBdtF43twxVM8PXucBvpW3iljYHmx5W9ZyulhICCkt-b3qf1czPxPZ5X2epEailM__asrTJThYVvDXZ3DitO3d8ZbnGOY7TKj3oLw92blPs18MXq6MMB_BD7_jT2w_nYjMicfo79cIh9omITP8YzwtKWEUXhVysUDa2Rfmek3xnpdz_iKzgYW-FHo_J0tGI0gDSQCaadAOGirbpXeTLw8r_vl4JUb7AR7UXPIsvOKBqgXJYZCpVs6QBxKjnZl2i7BxOkCsppgkJ9zOiatEwlKKl2eqwm1U8heDcpRZsXKFwT1uiqrTMdNSpJLgk_diWtMipne6soHAdGA4Vb9EdX2B16wcjzfWfiutidegO0QeF0Ohx5E8f3Rq43HgejyW6A_pqteDj1nAD72HMDx_Xx2N39Ax1n-zg)
